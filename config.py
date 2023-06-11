@@ -26,20 +26,21 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "1923471")
+    API_HASH  = os.environ.get("API_HASH", "fcdc178451cd234e63faefd38895c991")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "1965973276:AAFngpmzKFyESfcvQscv7S7Dmus7N-nksWI") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://video:video@cluster0.gp0rn.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
+    START_PIC   = os.environ.get("START_PIC", "https://starzone.ragalahari.com/may2021/hd/gunnjan-aras-ultra-bold-may2021/gunnjan-aras-ultra-bold-may20216t.jpg")
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '880087645').split()]
+    
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "Jasuranserials") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", 0))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
