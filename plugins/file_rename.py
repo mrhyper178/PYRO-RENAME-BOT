@@ -49,13 +49,14 @@ async def refunc(client, message):
         msg = await client.get_messages(message.chat.id, reply_message.id)
         file = msg.reply_to_message
         media = getattr(file, file.media.value)
-        if not "." in new_name:
-            if "." in media.file_name:
-                extn = media.file_name.rsplit('.', 1)[-1]
+	new_name = new_name
+	#if not "." in new_name:
+            #if "." in media.file_name:
+                #extn = media.file_name.rsplit('.', 1)[-1]
 		#extn = media.file_name.mp4
-            else:
-                extn = "mkv"
-            new_name = new_name
+            #else:
+                #extn = "mkv"
+            #new_name = new_name
         await reply_message.delete()
 
         button = [[InlineKeyboardButton("📁 Dᴏᴄᴜᴍᴇɴᴛ",callback_data = "upload_document")]]
@@ -103,7 +104,7 @@ async def doc(bot, update):
          except Exception as e:
              return await ms.edit(text=f"Yᴏᴜʀ Cᴀᴩᴛɪᴏɴ Eʀʀᴏʀ Exᴄᴇᴩᴛ Kᴇyᴡᴏʀᴅ Aʀɢᴜᴍᴇɴᴛ ●> ({e})")             
     else:
-         caption = f"**{new_filename}.mp4**"
+         caption = f"**{new_filename}**"
  
     if (media.thumbs or c_thumb):
          if c_thumb:
