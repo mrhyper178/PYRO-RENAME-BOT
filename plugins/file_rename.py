@@ -55,7 +55,7 @@ async def refunc(client, message):
 		extn = media.file_name.mp4
             else:
                 extn = "mp4"
-            new_name = new_name + "." + extn
+            new_name = new_name + "." + mp4
         await reply_message.delete()
 
         button = [[InlineKeyboardButton("📁 Dᴏᴄᴜᴍᴇɴᴛ",callback_data = "upload_document")]]
