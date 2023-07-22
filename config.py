@@ -36,7 +36,7 @@ class Config(object):
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://starzone.ragalahari.com/may2021/hd/gunnjan-aras-ultra-bold-may2021/gunnjan-aras-ultra-bold-may20216t.jpg")
+    START_PIC   = os.environ.get("START_PIC", "https://alitools.io/en/showcase/image?url=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FHTB1q9xmgBTH8KJjy0Fiq6ARsXXa6%2FTransparent-nets-sexy-clothes-Europe-and-the-United-States-exposed-breast-bud-silk-pajamas-lady-big.jpg_2140x2140.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '880087645').split()]
     
     FORCE_SUB   = os.environ.get("FORCE_SUB", "Jasuranserials") 
