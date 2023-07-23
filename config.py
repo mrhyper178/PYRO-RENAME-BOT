@@ -28,7 +28,7 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "1923471")
     API_HASH  = os.environ.get("API_HASH", "fcdc178451cd234e63faefd38895c991")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "1965973276:AAFngpmzKFyESfcvQscv7S7Dmus7N-nksWI") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6658506778:AAFFIftVetWOLalQM4PzIlTkmoc9bfUrMzU") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
@@ -36,7 +36,7 @@ class Config(object):
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://img.freepik.com/free-photo/woman-posing-nude-showing-her-breasts_23-2149086668.jpg")
+    START_PIC   = os.environ.get("START_PIC", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5w2sv6gJplbmfsobyLI_CiteYd6LkOXz5_A&usqp=CAU")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '880087645').split()]
     
     FORCE_SUB   = os.environ.get("FORCE_SUB", "Jasuranserials") 
