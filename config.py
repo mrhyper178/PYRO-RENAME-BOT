@@ -36,7 +36,7 @@ class Config(object):
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = (os.environ.get("START_PIC", "https://alitools.io/en/showcase/image?url=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FHTB1q9xmgBTH8KJjy0Fiq6ARsXXa6%2FTransparent-nets-sexy-clothes-Europe-and-the-United-States-exposed-breast-bud-silk-pajamas-lady-big.jpg_2140x2140.jpg https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcL2uDgq31oQ9WMGlMX2PpbuRbMYqFuElolg&usqp=CAU")).split()
+    START_PIC   = (os.environ.get("START_PIC", "https://alitools.io/en/showcase/image?url=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FHTB1q9xmgBTH8KJjy0Fiq6ARsXXa6%2FTransparent-nets-sexy-clothes-Europe-and-the-United-States-exposed-breast-bud-silk-pajamas-lady-big.jpg_2140x2140.jpg https://img.freepik.com/free-photo/woman-posing-nude-showing-her-breasts_23-2149086668.jpg?size=626&ext=jpg https://img.freepik.com/free-photo/girl-wearing-bikini-posing_273443-983.jpg?size=626&ext=jpg https://img.freepik.com/free-photo/nude-young-adult-girl-covering-her-breast-beautiful-sexy-girl-with-tattoo-body-sexy-female-with-nude-body_186202-4552.jpg?size=338&ext=jpg&ga=GA1.2.1192178455.1690106598&semt=ais ")).split()
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '880087645').split()]
     
     FORCE_SUB   = os.environ.get("FORCE_SUB", "Jasuranserials") 
