@@ -28,7 +28,7 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "1923471")
     API_HASH  = os.environ.get("API_HASH", "fcdc178451cd234e63faefd38895c991")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6658506778:AAFFIftVetWOLalQM4PzIlTkmoc9bfUrMzU") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5567847114:AAF_8rpe6nKXKgQf5wbhRxrXZWK41bKroUQ") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
@@ -37,7 +37,7 @@ class Config(object):
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.jpg?w=1200")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '880087645').split()]
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1109543851').split()]
     
     FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", 0))
